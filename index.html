@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Will Newman's Key Generator </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> 
+    <link href="https://fonts.googleapis.com/css?family=Hanalei+Fill" rel="stylesheet">
+  
+</head>
+<body> 
+        <!-- Grid Area for KeyCode Project -->
+        <div class = "keyCodeGrid">
+
+            <!-- Header -->
+            <div class = "header">
+                <h1 id = "title">KEY GENERATOR</h1> 
+            </div> 
+
+            <!-- Instructions -->
+            <div class = "instruct">
+                <p class = "para" id = "para1"> 
+                    Welcome to the Key Generator! 
+                </p> 
+                <p class = "para" id = "para2"> 
+                    Enter a key into the key generator and see what you get back. 
+                </p> 
+            </div>
+
+            <!-- KeyCode Input  -->
+            <div class = "inputBox"> 
+                <input class = "inputArea" type = "text"onkeypress = "keycode()">
+                <h3 class = "subTitle" id = "enterKey"> 
+                    Enter Key 
+                </h3>
+            </div>
+
+            <!-- Event Key Area -->
+            <div class = "eventKey"> 
+                <h3 class = "subTitle" id = "identifyKey"> 
+                    event.key 
+                </h3> 
+            </div>
+
+            <!-- Event Code Area -->
+            <div class = "eventCode"> 
+                <h3 class = "subTitle" id = "identifyCode"> 
+                    event.code 
+                </h3> 
+            </div>
+            
+            <!-- Event Which Area -->
+            <div class = "eventWhich"> 
+                <h3 class = "subTitle" id = "identifyWhich"> 
+                    event.which 
+                <h3> 
+            </div>
+        </div>
+       
+        <script src="app.js"></script>
+</body>
+</html> 

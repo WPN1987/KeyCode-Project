@@ -1,0 +1,117 @@
+body {
+    margin: auto auto;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    Font-family: Hanalei Fill;
+    text-shadow: 2px 2px black;
+    font-size: 25px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+  .keyCodeGrid {
+      height: 90%; 
+      width: 90%;
+      background-color: red; 
+      border: 10px solid yellow;
+      border-radius: 100px 100px 100px 100px;
+      color: yellow;
+      display: grid;
+
+      grid-template-columns: 3fr 4fr 3fr;
+      grid-template-rows: 2fr 1fr 3fr 5fr;
+      grid-template-areas: 
+
+        "header header header"
+        "instruct instruct instruct"
+        "inputBox inputBox inputBox"
+        "eventKey eventCode eventWhich";
+    } 
+      
+      .header {
+        grid-area: header;
+        font-size: 65px;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+      } 
+
+      .instruct {
+        grid-area: instruct;
+        display: grid;
+
+        grid-template-rows: 5fr 5fr;
+        grid-template-areas: 
+
+          "para1"
+          "para2"; 
+      } 
+
+      .para {
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+      }
+
+      .inputBox {
+        grid-area: inputBox;
+        display: grid;
+        
+        grid-template-columns: 3fr 4fr 3fr;
+        grid-template-rows: 5fr 5fr;
+        grid-template-areas: 
+
+          "... inputArea ..."
+          "enterKey enterKey enterKey"; 
+      } 
+
+      .inputArea {
+        grid-area: inputArea;
+        font-size: 25px;
+        background-color: black;
+        color: red;
+        border: 10px solid yellow;
+        border-radius: 100px 100px 100px 100px;
+        text-align: center; 
+      }
+
+      #enterKey {
+        grid-area: enterKey;
+        display: flex;
+
+        justify-content: center;
+        align-items: center; 
+
+      }
+
+      .eventKey {
+        grid-area: eventKey;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+      } 
+
+      .eventCode {
+        grid-area: eventCode;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+      } 
+
+      .eventWhich {
+        grid-area: eventWhich;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        
+      }
+
+ 
